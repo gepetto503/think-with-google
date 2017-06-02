@@ -5,10 +5,10 @@
 
 body, html {
   border: none;
+  background-color: lightgrey;
 }
 
 .container {
-  background-color: lightgrey;
   padding: 8px 15px;
 }
 
@@ -25,10 +25,11 @@ body, html {
   background-color: lightpink;
   position: relative;
   margin: 8px 0px;
+  overflow: hidden;
 }
 
 .featured-img {
-  height: 100%; /*image scales to fill column, which is set by viewport width*/
+  width: 100%; /*image scales to fill column, which is set by viewport width*/
 }
 
 .featured-text{
@@ -60,15 +61,16 @@ body, html {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  /*.container {
     background-color:lightblue;
 
-  }
+  }*/
 
   .box { /*applied to articles and featureds to give them the same height*/
     height: 300px;
-    border: 3px dashed blue;
+    /*border: 3px dashed blue;*/
   }
+
 
   .article-img {
     height: 50%;
