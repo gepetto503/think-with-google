@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  /*border: 1px dashed grey;*/
+}
+
+body, html {
+  border: none;
+}
+
+.container {
+  background-color: lightgrey;
+  padding: 8px 15px;
+}
+
+/*.row-border {
+  border: 1px solid red;
+}
+
+.col-border {
+  border: 1px solid blue;
+}*/
+
+.featured {
+  /*height: 350px;*/ /*with no fixed height, div size is set by it's content*/
+  background-color: lightpink;
+  position: relative;
+  margin: 8px 0px;
+}
+
+.featured-img {
+  width: 100%; /*image scales to fill column, which is set by viewport width*/
+}
+
+.featured-text{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: white;
+  padding: 10px;
+}
+.article {
+  overflow: auto;
+  background-color: white;
+  box-shadow: 5px 5px 5px grey;
+  margin: 8px 0px;
+}
+
+
+.article-img {
+  width: 33%;
+  max-width: 130px;
+  float:left;
+  padding: 1rem;
+}
+
+.article-text {
+  float: left;
+  width: 66%;
+  padding-left: 1rem;
+}
+
+/*.article-bootstrap {
+  background-color: white;
+}
+.article-img-bootstrap {
+  width: 100%;
+  max-width: 128px;
+  min-width: 100px;
+  padding: 1rem;
+}
+
+.article-text-bootstrap {
+  margin-left: -15px;
+  margin-right: 15px;
+}*/
