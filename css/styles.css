@@ -28,7 +28,7 @@ body, html {
 }
 
 .featured-img {
-  width: 100%; /*image scales to fill column, which is set by viewport width*/
+  height: 100%; /*image scales to fill column, which is set by viewport width*/
 }
 
 .featured-text{
@@ -58,6 +58,39 @@ body, html {
   width: 66%;
   padding-left: 1rem;
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-color:lightblue;
+
+  }
+
+  .box { /*applied to articles and featureds to give them the same height*/
+    height: 300px;
+    border: 3px dashed blue;
+  }
+
+  .article-img {
+    height: 50%;
+    width: 100%;
+    max-width: none;
+    float:none;
+    padding: 0;
+  }
+
+  .article-text {
+    float: none;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 0;
+  }
+
+  .article {
+    text-align: center;
+  }
+
+}
+
 
 /*.article-bootstrap {
   background-color: white;
