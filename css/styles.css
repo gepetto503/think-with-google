@@ -12,16 +12,7 @@ body, html {
   padding: 8px 15px;
 }
 
-/*.row-border {
-  border: 1px solid red;
-}
-
-.col-border {
-  border: 1px solid blue;
-}*/
-
 .featured {
-  /*height: 350px;*/ /*with no fixed height, div size is set by it's content*/
   background-color: lightpink;/*the pink color will show if the featured image fails to cover its parent div*/
   position: relative;
   margin: 8px 0px;
@@ -29,7 +20,8 @@ body, html {
 }
 
 .featured-img {
-  width: 100%; /*image scales to fill column, which is set by viewport width*/
+    width: 100%; /*image scales to fill column, which is set by viewport width*/
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .featured-text{
@@ -107,9 +99,9 @@ body, html {
 
 
 @media screen and (min-width: 1200px) {
- body {
+ /*body {
    background-color: purple;
- }
+ }*/
 
   #raekwon {
     width: 100%;
