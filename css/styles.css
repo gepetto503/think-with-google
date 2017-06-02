@@ -1,10 +1,8 @@
 * {
   box-sizing: border-box;
-  /*border: 1px dashed grey;*/
 }
 
 body, html {
-  border: none;
   background-color: #e8e8e8;
 }
 
@@ -17,12 +15,19 @@ body, html {
   position: relative;
   margin: 8px 0px;
   overflow: hidden;
+  height: 340px;
 }
 
 .featured-img {
-    width: 100%; /*image scales to fill column, which is set by viewport width*/
-    background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  transform: translate(-50%, -50%);
 }
+
+
 
 .featured-text{
   position: absolute;
@@ -52,11 +57,17 @@ body, html {
   padding-left: 1rem;
 }
 
+/*sm / tablet*/
 @media screen and (min-width: 768px) {
-  /*.container {
+  .container {
     background-color:lightblue;
 
-  }*/
+  }
+
+    .featured-img {
+      width: 100%;
+      height: auto;
+    }
 
   .box { /*applied to articles and featureds to give them the same height*/
     height: 300px;
@@ -89,8 +100,11 @@ body, html {
 }
 
 @media screen and (min-width: 992px) {
+  .container {
+    background-color: brown;
+  }
 
-  #raekwon {
+  .featured-img {
     height: 100%;
     width: auto;
   }
